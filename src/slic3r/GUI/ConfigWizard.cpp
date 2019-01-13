@@ -95,7 +95,7 @@ PrinterPicker::PrinterPicker(wxWindow *parent, const VendorProfile &vendor, cons
 			auto *cbox = new Checkbox(variants_panel, label, model_id, variant.name);
 			const size_t idx = cboxes.size();
 			cboxes.push_back(cbox);
-			bool enabled = appconfig_vendors.get_variant("PrusaResearch", model_id, variant.name);
+			bool enabled = appconfig_vendors.get_variant("OlyMEGA", model_id, variant.name);
 			variants_checked += enabled;
 			cbox->SetValue(enabled);
 			variants_sizer->Add(cbox, 0, wxBOTTOM, 3);
@@ -231,7 +231,7 @@ PageWelcome::PageWelcome(ConfigWizard *parent, bool check_first_variant) :
 	if (wizard_p()->run_reason == ConfigWizard::RR_DATA_EMPTY) {
 		wxString::Format(_(L("Run %s")), ConfigWizard::name());
 		append_text(wxString::Format(
-			_(L("Hello, welcome to Slic3r Prusa Edition! This %s helps you with the initial configuration; just a few settings and you will be ready to print.")),
+			_(L("Hello, welcome to Slic3r OlyMEGA Edition! This %s helps you with the initial configuration; just a few settings and you will be ready to print.")),
 			ConfigWizard::name())
 		);
 	} else {
@@ -240,7 +240,7 @@ PageWelcome::PageWelcome(ConfigWizard *parent, bool check_first_variant) :
 	}
 
 	const auto &vendors = wizard_p()->vendors;
-	const auto vendor_prusa = vendors.find("PrusaResearch");
+	const auto vendor_prusa = vendors.find("OlyMEGA");
 
 	if (vendor_prusa != vendors.cend()) {
 		AppConfig &appconfig_vendors = this->wizard_p()->appconfig_vendors;
@@ -329,7 +329,7 @@ PageVendors::PageVendors(ConfigWizard *parent) :
 
 	for (const auto vendor_pair : wizard_p()->vendors) {
 		const auto &vendor = vendor_pair.second;
-		if (vendor.id == "PrusaResearch") { continue; }
+		if (vendor.id == "OlyMEGA") { continue; }
 
 		auto *picker = new PrinterPicker(this, vendor, appconfig_vendors);
 		picker->Hide();
@@ -678,7 +678,7 @@ void ConfigWizard::priv::load_vendors()
 
 			const auto &model = needle->second.first;
 			const auto &variant = needle->second.second;
-			appconfig_vendors.set_variant("PrusaResearch", model, variant, true);
+			appconfig_vendors.set_variant("OlyMEGA", model, variant, true);
 		}
 	}
 }

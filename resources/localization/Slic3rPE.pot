@@ -280,7 +280,7 @@ msgstr ""
 #: xs/src/slic3r/GUI/ConfigWizard.cpp:226
 #, possible-c-format
 msgid ""
-"Hello, welcome to Slic3r Prusa Edition! This %s helps you with the initial "
+"Hello, welcome to Slic3r OlyMEGA Edition! This %s helps you with the initial "
 "configuration; just a few settings and you will be ready to print."
 msgstr ""
 
@@ -4207,7 +4207,7 @@ msgstr ""
 
 #: lib/Slic3r/GUI/MainFrame.pm:66
 msgid ""
-" - Remember to check for updates at http://github.com/prusa3d/slic3r/releases"
+" - Remember to check for updates at http://github.com/OlyMEGA/slic3r/releases"
 msgstr ""
 
 #: lib/Slic3r/GUI/MainFrame.pm:135
@@ -4439,11 +4439,11 @@ msgid "Open the Prusa3D drivers download page in your browser"
 msgstr ""
 
 #: lib/Slic3r/GUI/MainFrame.pm:341
-msgid "Prusa Edition Releases"
+msgid "OlyMEGA Edition Releases"
 msgstr ""
 
 #: lib/Slic3r/GUI/MainFrame.pm:341
-msgid "Open the Prusa Edition releases page in your browser"
+msgid "Open the OlyMEGA Edition releases page in your browser"
 msgstr ""
 
 #: lib/Slic3r/GUI/MainFrame.pm:348
@@ -4483,7 +4483,7 @@ msgid "Report an Issue"
 msgstr ""
 
 #: lib/Slic3r/GUI/MainFrame.pm:361
-msgid "Report an issue on the Slic3r Prusa Edition"
+msgid "Report an issue on the Slic3r OlyMEGA Edition"
 msgstr ""
 
 #: lib/Slic3r/GUI/MainFrame.pm:364

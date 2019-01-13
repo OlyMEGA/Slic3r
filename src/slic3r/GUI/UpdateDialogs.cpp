@@ -29,7 +29,7 @@ MsgUpdateSlic3r::MsgUpdateSlic3r(const Semver &ver_current, const Semver &ver_on
 	ver_current(ver_current),
 	ver_online(ver_online)
 {
-	const auto url = wxString::Format("https://github.com/prusa3d/Slic3r/releases/tag/version_%s", ver_online.to_string());
+	const auto url = wxString::Format("https://github.com/OlyMEGA/Slic3r/releases/tag/version_%s", ver_online.to_string());
 	auto *link = new wxHyperlinkCtrl(this, wxID_ANY, url, url);
 
 	auto *text = new wxStaticText(this, wxID_ANY, _(L("To download, follow the link below.")));

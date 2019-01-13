@@ -93,7 +93,7 @@ bool GUI_App::OnInit()
 #endif // ENABLE_IMGUI
 
     SetAppName("Slic3rPE-alpha");
-    SetAppDisplayName("Slic3r Prusa Edition");
+    SetAppDisplayName("Slic3r OlyMEGA Edition");
 
 //     Slic3r::debugf "wxWidgets version %s, Wx version %s\n", wxVERSION_STRING, wxVERSION;
 
